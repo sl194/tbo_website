@@ -1018,15 +1018,15 @@ canvas {
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
             
-const frameCount =148;
-//const frameCount =218;
-const currentFrame = index => (
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
-)
-
+//const frameCount =148;
+const frameCount =218;
 //const currentFrame = index => (
-//  `https://sutdapac-my.sharepoint.com/:f:/g/personal/sharmayne_lim_mymail_sutd_edu_sg/EqPI3AmifAVIqDBdU8aQ088BAjx4LlWEoEBUuOS_syMr0Q?e=dYTC3P/${index.toString().padStart(7, '0')}.jpg`
+//  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
 //)
+
+const currentFrame = index => (
+  `https://raw.githubusercontent.com/sl194/tbo_website/master/img/dark-product/Ani_Pedes_Jpg/Ani_Ped${index.toString()}.jpg`
+)
 
 
 const preloadImages = () => {
@@ -1038,11 +1038,11 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-//canvas.width=2972;
-//canvas.height=1500;
+canvas.width=2972;
+canvas.height=1500;
             
-canvas.width=1158;
-canvas.height=750;
+//canvas.width=1158;
+//canvas.height=750;
             
                         
 img.onload=function(){
